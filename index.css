@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-4xl {
+    font-size: calc(var(--root-font-size) * 2.25);
+  }
+  .text-lg {
+    font-size: calc(var(--root-font-size) * 1.125);
+  }
+  .text-base {
+    font-size: calc(var(--root-font-size) * 1);
+  }
+  .text-sm {
+    font-size: calc(var(--root-font-size) * 0.875);
+  }
+  .text-xs {
+    font-size: calc(var(--root-font-size) * 0.75);
+  }
+  .text-2xl {
+    font-size: calc(var(--root-font-size) * 1.75);
+  }
+
+  .heading1 {
+    @apply text-4xl;
+  }
+  .heading2 {
+    @apply text-2xl;
+  }
+  .heading3 {
+    @apply text-lg;
+  }
+
+  .paragraph1 {
+    @apply text-base;
+  }
+  .paragraph2 {
+    @apply text-sm;
+  }
+  .smallText {
+    @apply text-xs;
+  }
+  .buttonSmall {
+    @apply text-sm py-3 px-6;
+  }
+  .buttonMedium {
+    @apply text-base py-[14px] px-8;
+  }
+  .buttonLarge {
+    @apply text-lg py-4 px-12;
+  }
+}
+
+.home-bhashadaan {
+  background-image: url("./assets/images/homeBhashadaanBg.png");
+}
+
+.about-vision {
+  background-image: url("./assets/images/AboutVisionBg.webp");
+}
+
+.about-mission {
+  background-image: url("./assets/images/missionBg.webp");
+}
+
+.eco-system-header {
+  background-image: url("./assets/images/bhashniEcoSystem/bhashiniEcosystemBg.png");
+  transition: background-position 0.5s ease-in-out;
+  /* background-size: cover; */
+}
+
+.eco-system-header:hover {
+  background-position: left;
+}
+
+.ecosystem-modal > div:nth-of-type(1) {
+  background: none;
+  width: 100%;
+}
+
+.meityBg {
+  background: url("./assets/images/bhashniEcoSystem/meityBg.png") no-repeat
+    center center;
+  background-size: cover;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.dicBg {
+  background: url("./assets/images/bhashniEcoSystem/dicBg.png") no-repeat center
+    center;
+  background-size: cover;
+  transition: background-position 0.5s ease-in-out;
+}
+.dicBg:hover {
+  background-position: right;
+}
+.dicModalBg{
+  background: url("./assets/images/bhashniEcoSystem/dicModalBg.png") no-repeat center
+    center;
+  background-size: cover;
+}
+.meityModalBg{  
+  background: url("./assets/images/bhashniEcoSystem/meityModalBg.png") no-repeat center
+    center;
+  background-size: cover;
+}
+
+.ecosystem-title   {
+  text-shadow: 0px 12px 16px rgba(0, 0, 0, 0.57);
+}
+
+
+.about-page-banner1{
+  background-image: url("./assets/images/aboutPage/bannerBg.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+.footer{
+  background-image: url("./assets/images/footer/background.webp");
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.slick-prev{
+  left: 20px !important;
+  z-index: 1;
+}
+
+.slick-next{
+  right: 20px !important;
+  z-index: 1;
+}
+
+
+.apexcharts-canvas{
+  border-radius: 0.25rem;
+  background: #FFF;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.16);
+}
+
+
+.on-prem{
+  background-image: url("./assets/images/arpan/onPremBg.webp");
+  background-size: cover;
+  background-position: center;
+}
